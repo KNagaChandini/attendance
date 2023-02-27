@@ -1,0 +1,22 @@
+<!-- <p>attendace-table works!</p> -->
+<table class="table table-bordered table-stripped ">
+    <thead>
+        <h1>Attendance Records</h1>
+    </thead>
+    <tbody *ngFor="let record of records">
+        <tr>
+            <td>
+                {{record.rollNumber}}
+            </td>
+            <td>
+                {{record.name}}
+            </td>
+            <td>
+                {{record.age}}
+            </td>
+            <td>
+                {{record.isPresent}}
+            </td>
+        </tr>
+    </tbody>
+</table>

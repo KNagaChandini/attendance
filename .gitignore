@@ -1,0 +1,42 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# Compiled output
+/app-attendance/dist
+/app-attendance/tmp
+/app-attendance/out-tsc
+/app-attendance/bazel-out
+
+# Node
+/app-attendance/node_modules
+/app-attendance/npm-debug.log
+/app-attendance/yarn-error.log
+
+# IDEs and editors
+/app-attendance/.idea/
+/app-attendance/.project
+/app-attendance/.classpath
+/app-attendance/.c9/
+/app-attendance/*.launch
+/app-attendance/.settings/
+/app-attendance/*.sublime-workspace
+
+# Visual Studio Code
+/app-attendance/.vscode/*
+/app-attendance/!.vscode/settings.json
+/app-attendance/!.vscode/tasks.json
+/app-attendance/!.vscode/launch.json
+/app-attendance/!.vscode/extensions.json
+/app-attendance/.history/*
+
+# Miscellaneous
+/app-attendance/.angular/cache
+/app-attendance/.sass-cache/
+/app-attendance/connect.lock
+/app-attendance/coverage
+/app-attendance/libpeerconnection.log
+/app-attendance/testem.log
+/app-attendance/typings
+
+# System files
+/app-attendance/.DS_Store
+/app-attendance/Thumbs.db

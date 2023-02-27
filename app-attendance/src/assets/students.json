@@ -1,0 +1,32 @@
+[
+    {
+        "rollNumber": 1,
+        "name": "Ajay",
+        "age": 6,
+        "isPresent": true
+    },
+    {
+        "rollNumber": 3,
+        "name": "Bhavin",
+        "age": 7,
+        "isPresent": true
+    },
+    {
+        "rollNumber": 4,
+        "name": "Tiger Shraff",
+        "age": 4,
+        "isPresent": false
+    },
+    {
+        "rollNumber": 5,
+        "name": "Ajay",
+        "age": 6,
+        "isPresent": true
+    },
+    {
+        "rollNumber": 1,
+        "name": "Devgun",
+        "age": 6,
+        "isPresent": true
+    }
+]
