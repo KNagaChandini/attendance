@@ -40,3 +40,6 @@
 # System files
 /app-attendance/.DS_Store
 /app-attendance/Thumbs.db
+
+# backend files
+/backend/node_modules
