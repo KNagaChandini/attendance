@@ -2,6 +2,7 @@
 <table class="table table-bordered table-stripped ">
     <thead>
         <h1>Attendance Records</h1>
+        <button type="button" class="btn btn-primary col-sm-4">Add</button>
     </thead>
     <tbody *ngFor="let record of records">
         <tr>
@@ -16,6 +17,11 @@
             </td>
             <td>
                 {{record.isPresent}}
+            </td>
+            <td>
+                <button type="button" class="btn btn-warning">Edit</button>
+            </td><td>
+                <button type="button" class="btn btn-danger">Delete</button>
             </td>
         </tr>
     </tbody>
