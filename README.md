@@ -16,3 +16,18 @@ menu bar on the top -- navigate to list of students table
 
 
 
+# steps to run
+
+
+<!-- Run Mongodb -->
+sudo service mongod start
+
+<!-- to check the staus of mongodb server -->
+sudo service mongod start
+
+<!-- then run the node server -->
+attendance/backend$ node index.js
+
+<!-- then run the angular server -->
+attendance/app-attendance$ ng serve -o
+

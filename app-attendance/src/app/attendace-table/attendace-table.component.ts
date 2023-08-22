@@ -13,6 +13,10 @@ export class AttendaceTableComponent {
     this.records=res;
   }
 )};
-    
+  
+// Add records method
+addStudent(){
+  alert('hello')
+}
 
 }

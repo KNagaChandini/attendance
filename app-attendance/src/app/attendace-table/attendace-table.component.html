@@ -1,8 +1,11 @@
 <!-- <p>attendace-table works!</p> -->
-<table class="table table-bordered table-stripped ">
+<table class="table table-hover">
     <thead>
         <h1>Attendance Records</h1>
-        <button type="button" class="btn btn-primary col-sm-4">Add</button>
+          <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formModal">
+        Add
+    </button>
     </thead>
     <tbody *ngFor="let record of records">
         <tr>
@@ -26,3 +29,68 @@
         </tr>
     </tbody>
 </table>
+
+<!-- dialog box -->
+  
+  <!-- The Modal -->
+  <div class="modal" id="formModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Student Registration Form</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+            <form>
+                <!-- name -->
+                <div class="form-group">
+                  <!-- <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  <label for="name">Name</label>
+                  <input type="text" name="studentName" id="name" class="form-control" placeholder="Enter name">
+                </div>
+                <!-- age -->
+                <div class="form-group">
+                  <label for="age">Age</label>
+                  <input type="number" class="form-control" id="age" placeholder="Enter age">
+                  
+                </div>
+                <!-- roll number -->
+                <div class="form-group">
+                    <label for="rolNum">Roll number</label>
+                    <input type="number" class="form-control" id="rolNum" placeholder="Enter roll number">
+                    
+                </div>
+                <!-- radio buttons for present or absent -->
+                <div class="form-group">
+                        <label for="attendance">Attendance</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" id="presentRad" name="present" class="form-check-input" value="present">
+                        <label class="form-check-label" for="presentRad">Present</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input type="radio" id="absentRad" name="absent" class="form-check-input" value="absent">
+                        <label class="form-check-label" for="absentRad">Absent</label>
+                      </div>
+                </div>
+                
+              </form>
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+
+            <button type="submit" class="btn btn-primary" (click)="addStudent()">Submit</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  
